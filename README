@@ -1,0 +1,19 @@
+Jacobi Iteration Algorithm
+Author : Ray Weiming Luo
+         Benjamin Ellerby
+         
+This program is the perform the Jacobi iteration by a 2048 by 2048 matrix. Some requirements to run the program, the input test file must be titled 'input.txt' without single quotation marks and located in the same directory as the jacobi.c file. The input matrix must also be a 2048 by 2048 matrix of data.
+
+To compile the program, there is a Makefile which can compile the jacobi.c file using the command 'make', without quotation marks. And to run the program, simply type :
+
+./jacobi [INSERT NUMBER OF THREADS]
+
+Where you can insert any number of threads to have the program compute the matrix concurrently. An example is :
+
+./jacobi 3
+
+to have the program run using 3 threads.
+
+To time the program we used time(1). Example to get the time the program took to complete the iteration is :
+
+time ./jacobi 3
